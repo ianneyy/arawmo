@@ -1,0 +1,66 @@
+
+body{
+    background-image: url('wave.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-color: #8b5f5d;
+    min-width: 728px;
+}
+.container img{
+    height: 100px;
+    width: 80px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    
+}
+img{
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+img:hover{
+    transform: scale(1.05);
+}
+.row1, .row2{
+    display: flex;
+    
+}
+.row1-space2{
+    margin-left: 150px;
+}
+
+.row2-space2{
+    margin-left: 100px; 
+}
+@media screen and (max-width: 768px) {
+    .container img {
+        height: 80px;
+        width: 60px;
+    }
+
+    .row1-space2 {
+        margin-left: 100px;
+    }
+
+    .row2-space2 {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container img {
+        height: 60px;
+        width: 40px;
+    }
+
+    .row1-space2,
+    .row2-space2 {
+        margin-left: 20px;
+    }
+}
